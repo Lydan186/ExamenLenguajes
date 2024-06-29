@@ -1,0 +1,163 @@
+[debug] [2024-06-29T00:19:29.222Z] ----------------------------------------------------------------------
+[debug] [2024-06-29T00:19:29.225Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dilan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-06-29T00:19:29.225Z] CLI Version:   13.12.0
+[debug] [2024-06-29T00:19:29.226Z] Platform:      win32
+[debug] [2024-06-29T00:19:29.226Z] Node Version:  v20.13.1
+[debug] [2024-06-29T00:19:29.226Z] Time:          Fri Jun 28 2024 18:19:29 GMT-0600 (hora estándar central)
+[debug] [2024-06-29T00:19:29.226Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-29T00:19:29.230Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-06-29T00:19:29.349Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-29T00:19:29.349Z] > authorizing via signed-in user (dilanchava48@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\dilan\Documents\Documentos\cursos de la UCR\portafolio lenguajes\codelab-friendlyeats-web
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2024-06-29T00:19:29.625Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-06-29T00:19:29.625Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-06-29T00:21:44.066Z] Using project from CLI flag: friendlyeats-codelab-6438b
+[debug] [2024-06-29T00:21:44.067Z] > refreshing access token with scopes: []
+[debug] [2024-06-29T00:21:44.068Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-06-29T00:21:44.068Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-29T00:21:44.353Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-06-29T00:21:44.353Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-29T00:21:44.362Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-codelab-6438b [none]
+[debug] [2024-06-29T00:21:44.882Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-codelab-6438b 200
+[debug] [2024-06-29T00:21:44.882Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-codelab-6438b {"projectId":"friendlyeats-codelab-6438b","projectNumber":"816827898433","displayName":"FriendlyEats Codelab","name":"projects/friendlyeats-codelab-6438b","resources":{"hostingSite":"friendlyeats-codelab-6438b","storageBucket":"friendlyeats-codelab-6438b.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_b3f70dd5-b442-4a33-bbc2-6b71c6864639"}
+[info] i  Using project friendlyeats-codelab-6438b (FriendlyEats Codelab) 
+[info] 
+=== Firestore Setup
+[debug] [2024-06-29T00:21:44.888Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/friendlyeats-codelab-6438b/services/firestore.googleapis.com [none]
+[debug] [2024-06-29T00:21:44.888Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/friendlyeats-codelab-6438b/services/firestore.googleapis.com x-goog-quota-user=projects/friendlyeats-codelab-6438b
+[debug] [2024-06-29T00:21:45.464Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/friendlyeats-codelab-6438b/services/firestore.googleapis.com 200
+[debug] [2024-06-29T00:21:45.464Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/friendlyeats-codelab-6438b/services/firestore.googleapis.com [omitted]
+[debug] [2024-06-29T00:21:45.464Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/friendlyeats-codelab-6438b/databases/(default) [none]
+[debug] [2024-06-29T00:21:45.977Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/friendlyeats-codelab-6438b/databases/(default) 200
+[debug] [2024-06-29T00:21:45.977Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/friendlyeats-codelab-6438b/databases/(default) {"name":"projects/friendlyeats-codelab-6438b/databases/(default)","uid":"bdd8acd1-c2d1-48c8-86ed-6e95ab8947c5","createTime":"2024-06-26T19:39:22.813659Z","updateTime":"2024-06-26T19:39:22.813659Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-06-28T23:21:50.346410Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"II/Vq83F/4YDMIm12/ie+oYD"}
+[debug] [2024-06-29T00:21:45.977Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-06-29T00:21:45.978Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-29T00:21:45.978Z] > authorizing via signed-in user (dilanchava48@gmail.com)
+[debug] [2024-06-29T00:21:45.978Z] [iam] checking project friendlyeats-codelab-6438b for permissions ["firebase.projects.get"]
+[debug] [2024-06-29T00:21:45.979Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-codelab-6438b:testIamPermissions [none]
+[debug] [2024-06-29T00:21:45.979Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-codelab-6438b:testIamPermissions x-goog-quota-user=projects/friendlyeats-codelab-6438b
+[debug] [2024-06-29T00:21:45.979Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-codelab-6438b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-29T00:21:46.332Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-codelab-6438b:testIamPermissions 200
+[debug] [2024-06-29T00:21:46.332Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-codelab-6438b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-06-29T00:28:04.098Z] ----------------------------------------------------------------------
+[debug] [2024-06-29T00:28:04.109Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dilan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-06-29T00:28:04.110Z] CLI Version:   13.12.0
+[debug] [2024-06-29T00:28:04.110Z] Platform:      win32
+[debug] [2024-06-29T00:28:04.110Z] Node Version:  v20.13.1
+[debug] [2024-06-29T00:28:04.111Z] Time:          Fri Jun 28 2024 18:28:04 GMT-0600 (hora estándar central)
+[debug] [2024-06-29T00:28:04.112Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-29T00:28:04.220Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-29T00:28:04.221Z] > authorizing via signed-in user (dilanchava48@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\dilan\Documents\Documentos\cursos de la UCR\portafolio lenguajes\codelab-friendlyeats-web
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-06-29T00:28:34.998Z] Using project from CLI flag: friendlyeats-codelab-6438b
+[debug] [2024-06-29T00:28:35.001Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-codelab-6438b [none]
+[debug] [2024-06-29T00:28:35.594Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-codelab-6438b 200
+[debug] [2024-06-29T00:28:35.594Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-codelab-6438b {"projectId":"friendlyeats-codelab-6438b","projectNumber":"816827898433","displayName":"FriendlyEats Codelab","name":"projects/friendlyeats-codelab-6438b","resources":{"hostingSite":"friendlyeats-codelab-6438b","storageBucket":"friendlyeats-codelab-6438b.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_b3f70dd5-b442-4a33-bbc2-6b71c6864639"}
+[info] i  Using project friendlyeats-codelab-6438b (FriendlyEats Codelab) 
+[info] 
+=== Firestore Setup
+[debug] [2024-06-29T00:28:35.599Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/friendlyeats-codelab-6438b/services/firestore.googleapis.com [none]
+[debug] [2024-06-29T00:28:35.600Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/friendlyeats-codelab-6438b/services/firestore.googleapis.com x-goog-quota-user=projects/friendlyeats-codelab-6438b
+[debug] [2024-06-29T00:28:36.116Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/friendlyeats-codelab-6438b/services/firestore.googleapis.com 200
+[debug] [2024-06-29T00:28:36.116Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/friendlyeats-codelab-6438b/services/firestore.googleapis.com [omitted]
+[debug] [2024-06-29T00:28:36.116Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/friendlyeats-codelab-6438b/databases/(default) [none]
+[debug] [2024-06-29T00:28:36.636Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/friendlyeats-codelab-6438b/databases/(default) 200
+[debug] [2024-06-29T00:28:36.636Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/friendlyeats-codelab-6438b/databases/(default) {"name":"projects/friendlyeats-codelab-6438b/databases/(default)","uid":"bdd8acd1-c2d1-48c8-86ed-6e95ab8947c5","createTime":"2024-06-26T19:39:22.813659Z","updateTime":"2024-06-26T19:39:22.813659Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-06-28T23:28:41.008774Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IO28lJHH/4YDMIm12/ie+oYD"}
+[debug] [2024-06-29T00:28:36.636Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-06-29T00:28:36.637Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-29T00:28:36.637Z] > authorizing via signed-in user (dilanchava48@gmail.com)
+[debug] [2024-06-29T00:28:36.637Z] [iam] checking project friendlyeats-codelab-6438b for permissions ["firebase.projects.get"]
+[debug] [2024-06-29T00:28:36.638Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-codelab-6438b:testIamPermissions [none]
+[debug] [2024-06-29T00:28:36.638Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-codelab-6438b:testIamPermissions x-goog-quota-user=projects/friendlyeats-codelab-6438b
+[debug] [2024-06-29T00:28:36.638Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-codelab-6438b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-29T00:28:36.997Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-codelab-6438b:testIamPermissions 200
+[debug] [2024-06-29T00:28:36.997Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-codelab-6438b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-06-29T00:29:13.857Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/friendlyeats-codelab-6438b/releases pageSize=10&pageToken=
+[debug] [2024-06-29T00:29:14.220Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/friendlyeats-codelab-6438b/releases 200
+[debug] [2024-06-29T00:29:14.220Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/friendlyeats-codelab-6438b/releases {"releases":[{"name":"projects/friendlyeats-codelab-6438b/releases/cloud.firestore","rulesetName":"projects/friendlyeats-codelab-6438b/rulesets/5ad28c3c-215f-468d-b528-ecf117c6482a","createTime":"2024-06-26T19:39:25.501124Z","updateTime":"2024-06-26T19:44:07.402793Z"},{"name":"projects/friendlyeats-codelab-6438b/releases/firebase.storage/friendlyeats-codelab-6438b.appspot.com","rulesetName":"projects/friendlyeats-codelab-6438b/rulesets/0dea1192-9a90-4378-9933-29a443397b73","createTime":"2024-06-26T19:40:39.942745Z","updateTime":"2024-06-26T19:44:07.035176Z"}]}
+[debug] [2024-06-29T00:29:14.237Z] Found ruleset: projects/friendlyeats-codelab-6438b/rulesets/5ad28c3c-215f-468d-b528-ecf117c6482a
+[debug] [2024-06-29T00:29:14.238Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/friendlyeats-codelab-6438b/rulesets/5ad28c3c-215f-468d-b528-ecf117c6482a [none]
+[debug] [2024-06-29T00:29:14.383Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/friendlyeats-codelab-6438b/rulesets/5ad28c3c-215f-468d-b528-ecf117c6482a 200
+[debug] [2024-06-29T00:29:14.383Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/friendlyeats-codelab-6438b/rulesets/5ad28c3c-215f-468d-b528-ecf117c6482a [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-06-29T00:29:40.313Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/friendlyeats-codelab-6438b/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-06-29T00:29:40.316Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/friendlyeats-codelab-6438b/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-06-29T00:29:40.755Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/friendlyeats-codelab-6438b/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-06-29T00:29:40.756Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/friendlyeats-codelab-6438b/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-06-29T00:29:40.758Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/friendlyeats-codelab-6438b/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-06-29T00:29:40.758Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/friendlyeats-codelab-6438b/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/friendlyeats-codelab-6438b/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Hosting Setup
+[debug] [2024-06-29T00:29:40.762Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-codelab-6438b [none]
+[debug] [2024-06-29T00:29:41.201Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-codelab-6438b 200
+[debug] [2024-06-29T00:29:41.201Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-codelab-6438b {"projectId":"friendlyeats-codelab-6438b","projectNumber":"816827898433","displayName":"FriendlyEats Codelab","name":"projects/friendlyeats-codelab-6438b","resources":{"hostingSite":"friendlyeats-codelab-6438b","storageBucket":"friendlyeats-codelab-6438b.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_b3f70dd5-b442-4a33-bbc2-6b71c6864639"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
